@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<groups>
+		<run>
+			<exclude name="smoke"></exclude>  
+		</run>
+	</groups>
+	<listeners>
+		<listener class-name="base.ListnerExamples"></listener>
+	</listeners>
+  <test thread-count="4" name="Test" parallel="methods">
+    <classes>
+      <!-- >class name="base.HardAssertionImpl"/>
+      <class name="base.SoftAssertionExamples"/>
+      <class name="base.TestNGPractice"></class>
+      <class name="base.TestNGGroups"></class>-->
+      <class name="base.ParallelExecution"></class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
